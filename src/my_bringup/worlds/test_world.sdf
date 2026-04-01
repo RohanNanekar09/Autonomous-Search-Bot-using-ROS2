@@ -1,0 +1,699 @@
+<sdf version='1.10'>
+  <world name='empty'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='ground_plane'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
+            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Construction Cone'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0.170598 -1.96705 -1.3379399999999999e-11 9.7578199999999998e-22 -2.1684000000000002e-22 -1.05794e-43</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Construction Cone_0'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0.29441200000000001 3.6856200000000001 -1.3379399999999999e-11 2.05998e-21 -1.8973499999999999e-21 -1.9542599999999999e-42</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Construction Cone_1'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0.23046900000000001 0.84998200000000002 -8.4760700000000003e-07 4.8337099999999997e-14 -4.83367e-14 -2.0177500000000001e-16</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Construction Cone_2'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>2.10318 -4.1809000000000003 -1.3379399999999999e-11 1.8973499999999999e-21 -1.8160399999999999e-21 -1.7228300000000001e-42</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='cutout_wall'>
+      <static>true</static>
+      <link name='link'>
+        <pose>0 0 1.3999999999999999 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>10 0.20000000000000001 3.7999999999999998</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+              <collide_without_contact_bitmask>2</collide_without_contact_bitmask>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>10 0.20000000000000001 3.7999999999999998</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/cutout wall/2/files/materials/scripts</uri>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/cutout wall/2/files/materials/textures</uri>
+              <name>drc_practice/cutout_wall</name>
+            </script>
+          </material>
+        </visual>
+        <sensor name='mud_contact' type='contact'>
+          <always_on>true</always_on>
+          <update_rate>1000</update_rate>
+          <contact>
+            <collision>collision</collision>
+            <topic>__default_topic__</topic>
+          </contact>
+        </sensor>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>3.1341399999999999 -5.2081600000000003 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='cutout_wall_0'>
+      <static>true</static>
+      <link name='link'>
+        <pose>0 0 1.3999999999999999 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>10 0.20000000000000001 3.7999999999999998</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+              <collide_without_contact_bitmask>2</collide_without_contact_bitmask>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>10 0.20000000000000001 3.7999999999999998</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/cutout wall/2/files/materials/scripts</uri>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/cutout wall/2/files/materials/textures</uri>
+              <name>drc_practice/cutout_wall</name>
+            </script>
+          </material>
+        </visual>
+        <sensor name='mud_contact' type='contact'>
+          <always_on>true</always_on>
+          <update_rate>1000</update_rate>
+          <contact>
+            <collision>collision</collision>
+            <topic>__default_topic__</topic>
+          </contact>
+        </sensor>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>3.0616099999999999 4.9779499999999999 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='cutout_wall_1'>
+      <static>true</static>
+      <link name='link'>
+        <pose>0 0 1.3999999999999999 0 0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>10 0.20000000000000001 3.7999999999999998</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_without_contact>true</collide_without_contact>
+              <collide_without_contact_bitmask>2</collide_without_contact_bitmask>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>false</cast_shadows>
+          <geometry>
+            <box>
+              <size>10 0.20000000000000001 3.7999999999999998</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/cutout wall/2/files/materials/scripts</uri>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/cutout wall/2/files/materials/textures</uri>
+              <name>drc_practice/cutout_wall</name>
+            </script>
+          </material>
+        </visual>
+        <sensor name='mud_contact' type='contact'>
+          <always_on>true</always_on>
+          <update_rate>1000</update_rate>
+          <contact>
+            <collision>collision</collision>
+            <topic>__default_topic__</topic>
+          </contact>
+        </sensor>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>8.1241500000000002 -0.14329500000000001 0 0 0 -1.56009</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_dry_bag'>
+      <static>false</static>
+      <link name='link'>
+        <inertial>
+          <pose>0 0.02 0.125 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.0074700699999999997</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0083362999999999996</iyy>
+            <iyz>0</iyz>
+            <izz>0.0041458900000000002</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/rohan-nanekar/.gz/fuel/fuel.gazebosim.org/openrobotics/models/small dry bag/5/meshes/smalldrybag.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>1 1 1 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/SmallDryBag_Albedo.jpg</albedo_map>
+                <normal_map>materials/textures/SmallDryBag_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/SmallDryBag_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='Cylinder001'>
+          <pose>-9.6186999999999999e-06 0.023833699999999999 0.094589400000000004 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.21721199999999999</length>
+              <radius>0.079704800000000006</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <collision name='Cylinder002'>
+          <pose>-9.6224199999999993e-06 0.019914999999999999 0.21352499999999999 0.17070800000000008 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.067335800000000001</length>
+              <radius>0.0557934</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>1.0551010139000199 -0.79192254066278811 0.0017379581353555366 2.1667724932318062e-08 5.5829279219550711e-11 1.1834202941180936e-18</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='MainTable'>
+      <static>true</static>
+      <link name='body'>
+        <pose>0 0 0 0 0 0</pose>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/maintable/2/files/meshes/MainTable.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/maintable/2/files/meshes/MainTable.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>6.71678 -4.5506099999999998 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='SquareShelf'>
+      <static>true</static>
+      <link name='body'>
+        <pose>0 0 0 0 0 0</pose>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/squareshelf/3/files/meshes/SquareShelf.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/squareshelf/3/files/meshes/SquareShelf_Col.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>2.1921499999999998 2.48956 0.0181219 0 0 -1.53938</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Construction Cone_3'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+      <pose>3.1296900000000001 -1.5126599999999999 -1.3379399999999999e-11 8.1315199999999997e-22 5.4210100000000005e-23 2.2040500000000001e-44</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Construction Cone_4'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+      <pose>4.1061699999999997 0.69890600000000003 -1.3379399999999999e-11 1.8973499999999999e-21 -1.8160399999999999e-21 -1.7228300000000001e-42</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Construction Cone_5'>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>10 10 10</scale>
+              <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/construction cone/3/files/meshes/construction_cone.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+      <pose>6.3221299999999996 3.3405800000000001 -1.3379399999999999e-11 1.30104e-21 -1.5178799999999999e-21 -9.8741499999999994e-43</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='small_dry_bag_1'>
+      <static>false</static>
+      <link name='link'>
+        <inertial>
+          <pose>0 0.02 0.125 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.0074700699999999997</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0083362999999999996</iyy>
+            <iyz>0</iyz>
+            <izz>0.0041458900000000002</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/rohan-nanekar/.gz/fuel/fuel.gazebosim.org/openrobotics/models/small dry bag/5/meshes/smalldrybag.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+            <specular>1 1 1 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/SmallDryBag_Albedo.jpg</albedo_map>
+                <normal_map>materials/textures/SmallDryBag_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/SmallDryBag_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='Cylinder001'>
+          <pose>-9.6186999999999999e-06 0.023833699999999999 0.094589400000000004 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.21721199999999999</length>
+              <radius>0.079704800000000006</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <collision name='Cylinder002'>
+          <pose>-9.6224199999999993e-06 0.019914999999999999 0.21352499999999999 0.17070800000000008 0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.067335800000000001</length>
+              <radius>0.0557934</radius>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+      </link>
+      <pose>4.8484329669747108 -3.4496886935591311 0.0017379581353555375 2.1667724932315686e-08 5.5829279187524145e-11 1.1258712592341822e-18</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.10000000000000001 -0.90000000000000002</direction>
+      <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.0099999997764825821</linear>
+        <constant>0.89999997615814209</constant>
+        <quadratic>0.0010000000474974513</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
