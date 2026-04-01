@@ -14,15 +14,13 @@ key_features:
   - Simulation support using Gazebo
 
 tech_stack:
-  middleware: ROS2 (Jazzy / Humble)
-  language: Python (rclpy)
+  middleware: ROS2 (Jazzy)
+  language: C++ (cpp)
   slam: slam_toolbox
   navigation: nav2
   visualization: rviz2
   simulator: gazebo
-  optional:
-    - OpenCV
-    - Whisper (voice commands)
+ 
 
 system_workflow:
   - step: 1
